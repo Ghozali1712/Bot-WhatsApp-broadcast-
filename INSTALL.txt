@@ -1,0 +1,109 @@
+PANDUAN INSTALASI WHATSAPP BOT SHIFT REMINDER
+=====================================================
+
+PERSYARATAN:
+- Node.js versi 18 atau lebih baru
+- NPM (sudah termasuk dengan Node.js)
+- Koneksi internet yang stabil
+- Nomor WhatsApp yang belum terdaftar WhatsApp Web/Business
+
+LANGKAH INSTALASI:
+
+1. DOWNLOAD NODE.JS
+   - Kunjungi: https://nodejs.org
+   - Download versi LTS (Long Term Support)
+   - Install sesuai sistem operasi
+
+2. EXTRACT FILE
+   - Extract file whatsapp-bot-complete.zip ke folder yang diinginkan
+   - Contoh: C:\whatsapp-bot\ atau /home/user/whatsapp-bot/
+
+3. INSTALL DEPENDENCIES
+   Windows:
+   - Buka Command Prompt atau PowerShell
+   - Masuk ke folder bot: cd C:\whatsapp-bot
+   - Jalankan: npm install
+
+   Linux/Mac:
+   - Buka Terminal
+   - Masuk ke folder bot: cd /home/user/whatsapp-bot
+   - Jalankan: npm install
+
+4. JALANKAN BOT
+   Windows:
+   - Double-click file start.bat
+   ATAU
+   - Buka Command Prompt
+   - Jalankan: node index.js
+
+   Linux/Mac:
+   - Double-click file start.sh
+   ATAU
+   - Buka Terminal
+   - Jalankan: ./start.sh
+   ATAU
+   - Jalankan: node index.js
+
+5. AKSES WEB INTERFACE
+   - Buka browser
+   - Kunjungi: http://localhost:5000
+   - Interface web akan terbuka
+
+6. AUTENTIKASI WHATSAPP
+   - Masukkan nomor WhatsApp Indonesia (contoh: 081234567890)
+   - Klik "Minta Kode Pairing"
+   - Masukkan kode 8 digit ke WhatsApp di ponsel
+   - Bot akan tersambung otomatis
+
+KONFIGURASI AWAL:
+
+1. TAMBAH GRUP WHATSAPP
+   - Buka tab "Kelola Grup"
+   - Tambahkan bot ke grup WhatsApp yang diinginkan
+   - Aktifkan grup untuk menerima reminder
+
+2. ATUR JADWAL SHIFT
+   - Buka tab "Konfigurasi Shift"
+   - Sesuaikan jadwal shift sesuai kebutuhan
+   - Klik "Simpan Konfigurasi"
+
+3. TAMBAH KONTAK
+   - Buka tab "Kelola Kontak"
+   - Buat grup kontak untuk broadcast
+   - Simpan nomor-nomor penting
+
+TROUBLESHOOTING:
+
+Masalah: "node: command not found"
+Solusi: Install Node.js terlebih dahulu
+
+Masalah: "npm: command not found"
+Solusi: Restart Command Prompt/Terminal setelah install Node.js
+
+Masalah: Port 5000 sudah digunakan
+Solusi: Tutup aplikasi yang menggunakan port 5000
+
+Masalah: Bot tidak tersambung
+Solusi: Pastikan nomor WhatsApp belum terdaftar WhatsApp Web
+
+MENJALANKAN DI SERVER (OPSIONAL):
+
+Untuk menjalankan 24/7 di server:
+
+1. Install PM2:
+   npm install -g pm2
+
+2. Jalankan dengan PM2:
+   pm2 start index.js --name "whatsapp-bot"
+
+3. Auto-start saat reboot:
+   pm2 startup
+   pm2 save
+
+SUPPORT:
+Jika mengalami masalah, periksa:
+1. Log error di console/terminal
+2. Koneksi internet
+3. Status WhatsApp di ponsel
+
+Selamat menggunakan WhatsApp Bot!

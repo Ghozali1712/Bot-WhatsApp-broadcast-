@@ -1,0 +1,22 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.18",
+    "awesome-phonenumber": "^7.5.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "moment-timezone": "^0.6.0",
+    "node-cron": "^4.1.1",
+    "pino": "^9.7.0"
+  }
+}
